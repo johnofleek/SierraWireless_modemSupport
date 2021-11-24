@@ -21,8 +21,8 @@ Open two Linux terminals.
 
 
 1. First terminal: type the following - this should prepend data/time to the command line 
-1.1 export PROMPT_COMMAND="echo -n \[\$(date +%Y-%m-%d' '%H:%M:%S)\]\ "
+  1.1 export PROMPT_COMMAND="echo -n \[\$(date +%Y-%m-%d' '%H:%M:%S)\]\ "
 2. First terminal: change to the directory where you copied dm-logger and "default_qxdm_plus_5G.cfg" e.g 
-2.1 cd dm-logger/bin/
-2.2 ls contains files default_qxdm_plus_5G.cfg and dm-loggerrpi
+  2.1 cd dm-logger/bin/
+  2.2 ls contains files default_qxdm_plus_5G.cfg and dm-loggerrpi
 

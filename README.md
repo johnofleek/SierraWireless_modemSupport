@@ -19,4 +19,4 @@ dm-loggerrpi
 ```
 
 # Debug 5g network attach
-This [note](./dmlogger-attach) is aimed at capturing network attach debug information.
+This [note](./dmlogger-attach.md) is aimed at capturing network attach debug information.

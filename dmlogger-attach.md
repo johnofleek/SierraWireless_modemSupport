@@ -30,4 +30,6 @@ Open two Linux terminals.
     1. Check the required files are present by typing *ls*
     2. Response should contain files --> *default_qxdm_plus_5G.cfg* and *dm-loggerrpi* 
     3. dm-loggerrpi needs to be executable - change permissions if necessary  
+4. First terminal: check modem is present
+    5. Type *ls /dev/ttyU**  
 

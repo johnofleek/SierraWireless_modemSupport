@@ -24,7 +24,7 @@ Open two Linux terminals.
     1. export PROMPT_COMMAND="echo -n \[\$(date +%Y-%m-%d' '%H:%M:%S)\]\ "
 2. First terminal: Begin recording command line by typeing (use different filename for different sessions)
     3. script terminal1.txt
-         3. Expected response --> Script started, file is terminal1.txt
+    3. Expected response --> Script started, file is terminal1.txt
 4. First terminal: change to the directory where you copied dm-logger and "default_qxdm_plus_5G.cfg" e.g 
     1. cd dm-logger/bin/
     1. Check the required files are present by typing ls. Response should contain files --> default_qxdm_plus_5G.cfg and dm-loggerrpi

@@ -20,9 +20,11 @@ Open two Linux terminals.
 
 
 
-1. First terminal: type the following - this should prepend data/time to the command line 
+1. First terminal: prepend data/time to the command line by typing
     1. export PROMPT_COMMAND="echo -n \[\$(date +%Y-%m-%d' '%H:%M:%S)\]\ "
 2. First terminal: change to the directory where you copied dm-logger and "default_qxdm_plus_5G.cfg" e.g 
-    2.1 cd dm-logger/bin/
-    2.2 ls contains files default_qxdm_plus_5G.cfg and dm-loggerrpi
+    1. cd dm-logger/bin/
+    1. Check the required files are present by typing ls
+    3. response should containg files --> default_qxdm_plus_5G.cfg and dm-loggerrpi
+    4. Check that dm-loggerrpi is executable
 

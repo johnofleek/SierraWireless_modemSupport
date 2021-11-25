@@ -23,11 +23,10 @@ Open two Linux terminals.
 1. First terminal: prepend data/time to the command line by typing
     1. export PROMPT_COMMAND="echo -n \[\$(date +%Y-%m-%d' '%H:%M:%S)\]\ "
 1. First terminal: Begin recording command line by typeing (use different filename for different sessions) 
-    1. script terminal1.txt 
-    1. Expected response --> Script started, file is terminal1.txt 
-1. First terminal: change to the directory where you copied dm-logger and "default_qxdm_plus_5G.cfg" e.g 
+    1. *script terminal1.txt* 
+    1. Expected response --> *Script started, file is terminal1.txt* 
+1. First terminal: change to the directory where you copied *dm-logger* and *default_qxdm_plus_5G.cfg* e.g 
     1. cd dm-logger/bin/
-    1. Check the required files are present by typing ls. Response should contain files --> default_qxdm_plus_5G.cfg and dm-loggerrpi
-    1. dm-loggerrpi needs to be executable - change permissions if necessary
-    1. 
+    1. Check the required files are present by typing ls. Response should contain files --> *default_qxdm_plus_5G.cfg* and *dm-loggerrpi* 
+    1. dm-loggerrpi needs to be executable - change permissions if necessary  
 

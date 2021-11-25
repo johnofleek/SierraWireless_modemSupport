@@ -34,7 +34,24 @@ Open two Linux terminals.
 1. First terminal: check modem is present 
     1. Type *ls /dev/ttyU** 
     1. Expected response is */dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2* 
-1. Second Terminal 
+1. Second terminal 
+    1. *export PROMPT_COMMAND="echo -n \[\$(date +%Y-%m-%d' '%H:%M:%S)\]\ "*
+1. Second terminal: Begin recording command line by typing (use different filename for different sessions) 
+    1. *script terminal2.txt* 
+    1. Expected response --> *Script started, file is terminal2.txt* 
+    1. start minicom terminal session with modem 
+        1. *sudo minicom -D /dev/ttyUSB2*
+    1. Turn on minicom extended time stamps (Ctrl A n twice) 
+        1. Ctrl A n
+        1. Ctrl A n 
+        1. responses should look like this
+```
+[2021-11-25 11:54:26.393] at
+[2021-11-25 11:54:27.092] OK
+```
+        1. 
+    
+    
 
 
 

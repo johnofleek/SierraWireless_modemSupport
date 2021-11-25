@@ -33,3 +33,5 @@ Open two Linux terminals.
 4. First terminal: check modem is present 
     5. Type *ls /dev/ttyU** 
 
+
+

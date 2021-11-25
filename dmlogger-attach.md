@@ -15,14 +15,15 @@ This process was developed to work specific equipment. It should be possible to 
 It's important to timestamp every event so that if there is an issue with the log the process taken can be debugged.
 
 Open two Linux terminals. 
-* First terminal to run the dm-logger tool
-* Second terminal will be used for Serial communication with the modem (AT commands)
+* First terminal will be used with the dm-logger tool
+* Second terminal will be used for Serial AT command communication with the modem 
 
+<BR>
 
 
 1. First terminal: prepend data/time to the command line by typing
     1. *export PROMPT_COMMAND="echo -n \[\$(date +%Y-%m-%d' '%H:%M:%S)\]\ "*
-1. First terminal: Begin recording command line by typeing (use different filename for different sessions) 
+1. First terminal: Begin recording command line by typing (use different filename for different sessions) 
     1. *script terminal1.txt* 
     1. Expected response --> *Script started, file is terminal1.txt* 
 1. First terminal: change to the directory where you copied *dm-logger* and *default_qxdm_plus_5G.cfg* e.g 
@@ -30,8 +31,10 @@ Open two Linux terminals.
     1. Check the required files are present by typing *ls*
     2. Response should contain files --> *default_qxdm_plus_5G.cfg* and *dm-loggerrpi* 
     3. dm-loggerrpi needs to be executable - change permissions if necessary  
-4. First terminal: check modem is present 
-    5. Type *ls /dev/ttyU** 
+1. First terminal: check modem is present 
+    1. Type *ls /dev/ttyU** 
+    1. Expected response is */dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2* 
+1. Second Terminal 
 
 
 

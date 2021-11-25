@@ -5,6 +5,7 @@ This process was developed to work specific equipment. It should be possible to 
 # Equipment used
 * Raspberry Pi 4 
 * with latest raspberry pi os and 
+* minicom installed
 * Sierra Mobile Broadband Package for Linux (MPBL) drivers (in this case R23)
 * Sierra EM9191 card development board
 * Suitable dm-logger application
@@ -63,7 +64,40 @@ The second terminal will be used for Serial AT command communication with the mo
 1. If QXDMLOGENABLE is not set. Send command 
     1. Type *at!entercnd="A710"*
     1. Type *at!custom="QXDMLOGENABLE", 1*
-    1. Reboot modem at+cfun=1,1 then retest as above
+    1. Reboot modem at+cfun=1,1 then retest as Type *at!custom?* 
+
+**Second terminal:** turn radio off
+1. Type *at+cfun=0*
+    
+**Second terminal:** check modem state
+1. Type *at+creg=1*
+1. Type *at+cereg=1*    
+1. Type *at+cgdcont?*
+1. Type *at+cops?*
+    
+**First terminal:** start dm-logging (assumes filter is on same path as dm-logger)
+1. Type *./dm-loggerrpi /dev/ttyUSB1 -c default_qxdm_plus_5G.cfg -o test_log.qmdl    
+
+**Second terminal:** Turn radio on
+1. Type *at+cfun=1*
+1. Type *at+cfun?* should return *+CFUN: 1*
+1. Type *at+cops?*  Try this several times over the next 10 minutes
+1. at+cfun=0
+    
+**First terminal:** stop dm-logging
+1. Hit the *Enter* Key to stop logging
+    
+**First terminal:** exit script
+1. *Ctrl D*
+    
+**Second terminal:** Exit minicom
+1. *Ctrl A X Yes 
+
+**Second terminal:** exit script
+1. *Ctrl D*
+
+ 
+Send the dm-logger log file (qdml) and the two terminal log files to your support contact
     
  
     

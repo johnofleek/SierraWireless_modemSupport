@@ -11,6 +11,12 @@ This process was developed to work specific equipment. It should be possible to 
 * Suitable dm-logger application
 * Filter file "default_qxdm_plus_5G.cfg"
 
+# Note on EM9191
+EM9191 ttyUSB ports are in a different order to all other Sierra Modems
+ttyUSB0 == AT commands
+ttyUSB1 == DM serial port
+
+
 # Procedure
 
 It's important to timestamp every event so that if there is an issue with the log the process taken can be debugged.
@@ -46,10 +52,10 @@ The second terminal will be used for Serial AT command communication with the mo
 
 **Second  terminal:** check modem is present 
  1. Type *ls /dev/ttyU** 
- 1. Expected response is */dev/ttyUSB0  /dev/ttyUSB1  /dev/ttyUSB2* 
+ 1. Expected response is (at least) */dev/ttyUSB0  /dev/ttyUSB1 * 
     
 **Second terminal:** start minicom terminal session with modem 
-1. *sudo minicom -D /dev/ttyUSB2* 
+1. *sudo minicom -D /dev/ttyUSB0* 
 1. Turn on minicom extended time stamps (Ctrl A n twice) 
     1. Ctrl A n
     1. Ctrl A n 

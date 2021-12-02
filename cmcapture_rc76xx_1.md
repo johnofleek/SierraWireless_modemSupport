@@ -64,5 +64,6 @@ Activate context 5
 
 ```
 AT!SCACT=1,5
++CME ERROR: no network service
 ```
 

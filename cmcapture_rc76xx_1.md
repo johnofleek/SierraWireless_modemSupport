@@ -66,4 +66,9 @@ Activate context 5
 AT!SCACT=1,5
 +CME ERROR: no network service
 ```
+Try
 
+AT$QCPDPP=<cid>, <auth_type>, <password>, <username>
+```
+AT$QCPDPP=5,1,"secure","eesecure"
+```

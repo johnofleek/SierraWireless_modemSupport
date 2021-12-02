@@ -26,10 +26,11 @@ dm-loggermipseb
 dm-loggerrpi
 ```
 
-# Debug 5g network attach
+## Debug 5g network attach using dmlogger
 This [note](./dmlogger-attach.md) is aimed at capturing network attach debug information using dmlogger and the EM9191 on a Raspberry Pi.
 
 # dmcapture
 This is an older toolset.  
 It is bundled with the Sierra Linux QMI SDK. It can be downloaded from the [source](https://source.sierrawireless.com/) by searching for "Linux QMI SDK".  
 The version I used came from tarball "SLQS04.00.27.bin.tar"  folder I\tools\logging\dm
+

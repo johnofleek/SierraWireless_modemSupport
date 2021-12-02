@@ -72,3 +72,5 @@ AT$QCPDPP=<cid>, <auth_type>, <password>, <username>
 ```
 AT$QCPDPP=5,1,"secure","eesecure"
 ```
+ 
+ Ok so this could be a driver issue - note that AT!SCACT only works with gobinet - obsolescent drivers

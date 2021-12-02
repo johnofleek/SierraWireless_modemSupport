@@ -1,5 +1,13 @@
-# dm-logger
-Notes and procedures for the Sierra Wireless dm-logger application 
+The scope of this repo is to document Sierra Wireless debug mechansims that use the Qualcom / Sierra DM usb serial port 
+
+# dmlogger
+Notes and procedures for the Sierra Wireless dm-logger application. 
+At the time of writting the following version was available.
+```
+./dm-loggerrpi
+dm-logger v1.0.2106.0
+```
+This version seems to be specific to the EM9191 5G module
 
 The dm-logger application can be obtained from the Sierra Wireless source on a page 
 headed *Mobile Broadband Package for Linux (SDK, Drivers, Documentation)* currently 
@@ -20,3 +28,8 @@ dm-loggerrpi
 
 # Debug 5g network attach
 This [note](./dmlogger-attach.md) is aimed at capturing network attach debug information using dmlogger and the EM9191 on a Raspberry Pi.
+
+# dmcapture
+This is an older toolset.  
+It is bundled with the Sierra Linux QMI SDK. It can be downloaded from the [source](https://source.sierrawireless.com/) by searching for "Linux QMI SDK".  
+The version I used came from tarball "SLQS04.00.27.bin.tar"  folder I\tools\logging\dm

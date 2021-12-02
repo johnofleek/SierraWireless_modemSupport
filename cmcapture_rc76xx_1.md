@@ -31,3 +31,38 @@ sudo minicom -D /dev/ttyUSB2
 
 ## test using EE PAYG SIM
 
+Check operator selection
+```
+at+cops?
++cops: 0,0,"EE",7
+```
+
+Set the APN on context 5 leave context 1 blank
+```
+at+cgdcont=5,"IP","everywhere"
+at+cgdcont?
++CGDCONT: 1,"IPV4V6","","0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0",0,0,0,0
++CGDCONT: 5,"IP","everywhere","0.0.0.0",0,0,0,0
+```
+Set authentication parameters for context 5
+
+```
+AT+CGAUTH=5,1,"eesecure","secure"
+at+cgauth?
++CGAUTH: 1,0
++CGAUTH: 5,1,"eesecure"
+```
+
+Start debug log
+```
+sudo ./dmcapture.sh -a arm9 -d /dev/ttyUSB0 -l \
+ -f filters/MC7xxx_GSM_GPRS_EDGE_WCDMA_LTE_DATA_EVDO_SMS.sqf -o testrc76_c5.qmdl
+```
+
+
+Activate context 5
+
+```
+AT+CGACT=1,5
+```
+

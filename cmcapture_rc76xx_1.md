@@ -63,6 +63,6 @@ sudo ./dmcapture.sh -a arm9 -d /dev/ttyUSB0 -l \
 Activate context 5
 
 ```
-AT+CGACT=1,5
+AT!SCACT=1,5
 ```
 

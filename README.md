@@ -35,6 +35,6 @@ It is bundled with the Sierra Linux QMI SDK. It can be downloaded from the [sour
 The version I used came from tarball "SLQS04.00.27.bin.tar"  folder I\tools\logging\dm
 
 ## Debug RC7620 failing to activate data connection
-This [note](./cmcapture_rc76xx_1.md) documents a method I used to capture log files 
+This [note](./dmcapture_rc76xx_1.md) documents a method I used to capture log files 
 
 

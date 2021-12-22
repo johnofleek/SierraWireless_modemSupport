@@ -76,6 +76,7 @@ The second terminal will be used for Serial AT command communication with the mo
 1. Type *at+cfun=0*
     
 **Second terminal:** check modem state
+1. Type *ati9*
 1. Type *at+creg=1*
 1. Type *at+cereg=1*    
 1. Type *at+cgdcont?*

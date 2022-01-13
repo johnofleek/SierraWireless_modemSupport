@@ -1,17 +1,20 @@
-# SW / RPi driver build manual
+# Sierra MBPL USB driver build example using a Raspberry pi
 
 From  https://github.com/RPi-Distro/rpi-source
 
 ## Steps
+First part is to download the necessary Raspberry pi source so that the make will work  
 
-Make sure the RPi file system is expanded
+Make sure the RPi file system is expanded  
 
-Dependencies  
+Shell into to the Raspberry pi
+
+Install required apps 
 ```
 sudo apt install git bc bison flex libssl-dev
 ```
 
-Then install  
+Then download the source code
 ```
 sudo wget https://raw.githubusercontent.com/RPi-Distro/rpi-source/master/rpi-source -O /usr/local/bin/rpi-source && sudo chmod +x /usr/local/bin/rpi-source && /usr/local/bin/rpi-source -q --tag-update
 ```
@@ -21,7 +24,12 @@ Then Run
 rpi-source
 ```
 
-Then from src/USB
+Next stage is to build the Sierra USB MBPL drivers  
+
+Download the MBPL drivers from [Sierra's source website](https://source.sierrawireless.com/)
+ 
+cd to the USB folder
+
 ```
 make
 ```
@@ -31,7 +39,7 @@ Then
 make install
 ```
 
-With RC7620 - I see
+With RC7620 - I see the following 
 ```
 $ lsusb -t
 /:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M

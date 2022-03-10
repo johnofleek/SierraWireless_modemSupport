@@ -22,10 +22,11 @@ FSN: 7Q0273850613B0
 EE PAYG SIM  
 
 **Sierra logger**
-Uses the USB DM port
-From 
-[Linux QMI SDK Software](https://source.sierrawireless.com/resources/airprime/software/linux-qmi-sdk-software-latest/)
+Uses the USB DM port  
+From   
+[Linux QMI SDK Software](https://source.sierrawireless.com/resources/airprime/software/linux-qmi-sdk-software-latest/)  
 
+tools\logging\dm\dmcapture.sh  
 
 # AT command access
 Install minicom
@@ -59,20 +60,30 @@ at+cgauth?
 +CGAUTH: 5,1,"eesecure"
 ```
 
-Start debug log
+**Terminal 2: Start debug log**
 ```
 sudo ./dmcapture.sh -a arm9 -d /dev/ttyUSB0 -l \
  -f filters/MC7xxx_GSM_GPRS_EDGE_WCDMA_LTE_DATA_EVDO_SMS.sqf -o testrc76_c5.qmdl
 ```
+**Terminal 2: start minicom terminal session with modem**
 
+sudo minicom -D /dev/ttyUSB0
+Turn on minicom extended time stamps (Ctrl A n twice)
+Ctrl A n
+Ctrl A n
+responses should look like this
+```
+[2021-11-25 11:54:26.393] at
+[2021-11-25 11:54:27.092] OK
+```
 
-Activate context 5
+Activate context 5  
 
 ```
 AT!SCACT=1,5
 +CME ERROR: no network service
 ```
-Try
+Try  
 
 AT$QCPDPP=<cid>, <auth_type>, <password>, <username>
 ```

@@ -69,9 +69,11 @@ sudo ./dmcapture.sh -a arm9 -d /dev/ttyUSB0 -l \
 
 sudo minicom -D /dev/ttyUSB0
 Turn on minicom extended time stamps (Ctrl A n twice)
+```
 Ctrl A n
 Ctrl A n
-responses should look like this
+```
+Timestamp responses should look like this
 ```
 [2021-11-25 11:54:26.393] at
 [2021-11-25 11:54:27.092] OK

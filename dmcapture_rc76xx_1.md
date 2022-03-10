@@ -5,7 +5,7 @@ sudo systemctl stop ModemManager
 ```
 # Equipment used
 
-Modem 
+**Modem** 
 ```
 ati9
 Manufacturer: Sierra Wireless, Incorporated
@@ -18,8 +18,14 @@ FSN: 7Q0273850613B0
 +GCAP: +CGSM
 ```
 
-Raspberry pi 4  
+**Raspberry pi 4**  
 EE PAYG SIM  
+
+**Sierra logger**
+Uses the USB DM port
+From 
+[Linux QMI SDK Software](https://source.sierrawireless.com/resources/airprime/software/linux-qmi-sdk-software-latest/)
+
 
 # AT command access
 Install minicom

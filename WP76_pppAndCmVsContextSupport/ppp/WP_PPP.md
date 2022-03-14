@@ -57,7 +57,7 @@ AT+CGPADDR
 
 ```
 
-[Sierra DM log decode](./WP_CM_QualcomDMDecode_1.png)
+[Sierra DM log decode](./.png)
 
 ## Capture of pppd connection
 ```

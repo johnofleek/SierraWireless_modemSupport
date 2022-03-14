@@ -62,7 +62,7 @@ at+cgauth?
 
 **Terminal 2: Start debug log**
 ```
-sudo ./dmcapture.sh -a arm9 -d /dev/ttyUSB0 -l \
+sudo ./dmcapture.sh -a arm -d /dev/ttyUSB0 -l \
  -f filters/MC7xxx_GSM_GPRS_EDGE_WCDMA_LTE_DATA_EVDO_SMS.sqf -o testrc76_c5.qmdl
 ```
 **Terminal 2: start minicom terminal session with modem**

@@ -2,7 +2,10 @@
 RPi4 Bullseye os
 WASP PCA + WP7607 
 
-# Context 2 AT command activate
+
+
+# Capture modem Qualcomm debug
+
 ## dm capture - SHELL 1
 
 Captures the raw qualcom data from the WP76

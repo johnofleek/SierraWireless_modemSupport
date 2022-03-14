@@ -1,5 +1,12 @@
 I've just captured using Legato cm (cm data connect) to activated context 3
 
+
+## Equipment
+RPi4 Bullseye os
+WASP PCA + WP7607 
+
+## Procedure
+
 RPI -> Start the capture
 ```
 sudo ./dmcapture.sh -a arm -d /dev/ttyUSB0 -l  -f filters/MC7xxx_GSM_GPRS_EDGE_WCDMA_LTE_DATA_EVDO_SMS.sqf -o testWP76_cm.qmdl
@@ -27,12 +34,16 @@ Activate context 3
 cm data connect
 ```
 
-after the successful connection -  (ignore context 2 that's me messing with at+cgact)
+
+## Results
+
+After the successful connection -  (ignore context 2 that's me messing with at+cgact)
 
 RPI-> 
 ```
 minicom root@192.168.2.2
 ```
+
 
 Check the contexts and modem reported IP addresses
 

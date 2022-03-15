@@ -83,7 +83,7 @@ RPI -> Start the capture
 sudo ./dmcapture.sh -a arm -d /dev/ttyUSB0 -l  -f filters/MC7xxx_GSM_GPRS_EDGE_WCDMA_LTE_DATA_EVDO_SMS.sqf -o testWP76_cmRadioOn.qmdl
 ```
 
-[[Qualcomm debug raw data](./testWP76_cmRadioOn.qmdl)
+[Qualcomm debug raw data](./testWP76_cmRadioOn.qmdl)
 
 WP-> Radio on  
 ```
@@ -105,5 +105,5 @@ AT+CGPADDR
 
 
 
-OK 
-```
+ 
+

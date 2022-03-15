@@ -8,8 +8,8 @@ The following methods have been investigated
 3. PPP serial using a combination of chat AT commands and pppd
 
 ## Equipment used
-RPi4 + Bullseye os + pppd
-WASP PCA + WP7607 
+RPi4 + Bullseye os + pppd  
+WASP PCA + WP7607  
 
 ## Reports
 [cm](./cm/WP_CM.md) 

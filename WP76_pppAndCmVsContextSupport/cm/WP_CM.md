@@ -1,5 +1,6 @@
-I've just captured using Legato cm (cm data connect) to activated context 3
-
+# Scope
+Capture Qualcomm debug using Legato cm (cm data connect) to activated context 3  
+Capture Qualcomm debug using Legato cm (cm radio) to observe automatic context 1 connection following radio on  
 
 ## Equipment
 RPi4 Bullseye os  

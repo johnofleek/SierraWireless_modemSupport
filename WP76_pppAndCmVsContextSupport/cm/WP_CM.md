@@ -59,7 +59,7 @@ Check the contexts and modem reported IP addresses
 > +CGPADDR: 3,100.66.238.50
 ```
 
-[Sierra DM log decode](./WP_CM_QualcomDMDecode_1.png)
+![Sierra DM log decode](./WP_CM_QualcomDMDecode_1.png)
 
 
 # Initial radio startup

@@ -2,9 +2,9 @@ I've just captured using Legato cm (cm data connect) to activated context 3
 
 
 ## Equipment
-RPi4 Bullseye os
-WASP PCA + WP7607 
-EE PAYG SIM - note network RAT is LTE - we suspect different behaviour when RAT is 2G or 3G. RAT alternatives will be the subject of other tests
+RPi4 Bullseye os  
+WASP PCA + WP7607  
+EE PAYG SIM - note network RAT is LTE - we suspect different behaviour when RAT is 2G or 3G. RAT alternatives will be the subject of other tests  
 
 ## Procedure
 

@@ -59,6 +59,9 @@ Check the contexts and modem reported IP addresses
 > +CGPADDR: 3,100.66.238.50
 ```
 
+[Raw Qualcomm log capture](./testWP76_cm.qmdl)  
+
+Decoded Raw Qualcomm log capture
 ![Sierra DM log decode](./WP_CM_QualcomDMDecode_1.png)
 
 
@@ -79,7 +82,7 @@ RPI -> Start the capture
 sudo ./dmcapture.sh -a arm -d /dev/ttyUSB0 -l  -f filters/MC7xxx_GSM_GPRS_EDGE_WCDMA_LTE_DATA_EVDO_SMS.sqf -o testWP76_cmRadioOn.qmdl
 ```
 
-[Log file captured](./testWP76_cmRadioOn.qmdl)
+[Raw log file captured](./testWP76_cmRadioOn.qmdl)
 
 WP-> Radio on  
 ```

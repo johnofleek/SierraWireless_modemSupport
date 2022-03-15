@@ -4,6 +4,9 @@ I've just captured using Legato cm (cm data connect) to activated context 3
 ## Equipment
 RPi4 Bullseye os
 WASP PCA + WP7607 
+EE PAYG SIM - note network RAT is LTE - we suspect different behaviour when RAT is 2G or 3G. RAT alternatives will be the subject of other tests 
+
+
 
 ## Procedure
 
@@ -66,6 +69,8 @@ Decoded Raw Qualcomm log capture
 
 
 # Initial radio startup
+The question was asked "what happens when the modem first starts and automatically connects context 1".
+It isn't easy to reboot the modem and start dmcapture - so the following radio Off/ Radio On scheme was tried.
 
 RPI-> shell into the WP  
 ```

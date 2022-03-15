@@ -147,4 +147,11 @@ at
 ```
 
 
-
+# Other things we could try
+```
+AT$QCPDPP=<cid>, <auth_type>, <password>, <username>
+<auth_type>
+0 = None-Username and password not required
+1 = PAP-Username and password accepted
+2 = CHAP-Username and password (secret) accepted
+```

@@ -60,3 +60,45 @@ Check the contexts and modem reported IP addresses
 ```
 
 [Sierra DM log decode](./WP_CM_QualcomDMDecode_1.png)
+
+
+# Initial radio startup
+
+RPI-> shell into the WP  
+```
+ssh root@192.168.2.2
+```
+WP-> Radio off  
+```
+cm radio off
+```
+
+
+RPI -> Start the capture  
+```
+sudo ./dmcapture.sh -a arm -d /dev/ttyUSB0 -l  -f filters/MC7xxx_GSM_GPRS_EDGE_WCDMA_LTE_DATA_EVDO_SMS.sqf -o testWP76_cmRadioOn.qmdl
+```
+
+[Log file captured](./testWP76_cmRadioOn.qmdl)
+
+WP-> Radio on  
+```
+cm radio on
+```
+
+Check to see if context 1 auto activated
+```
+at+cgact?
++CGACT: 1,1
++CGACT: 2,0
++CGACT: 3,0
+
+AT+CGPADDR
++CGPADDR: 1,100.73.205.66
++CGPADDR: 2,0.0.0.0
++CGPADDR: 3,0.0.0.0
+```
+
+
+
+OK 

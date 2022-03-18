@@ -1,6 +1,16 @@
 ## Equipment
 RPi4 Bullseye os  
 WASP PCA + WP7607  
+```
+Firmware Version:              SWI9X07Y_02.37.03.00 73df45 jenkins 2020/04/08 10:59:14
+Bootloader Version:            SWI9X07Y_02.37.03.00 73df45 jenkins 2020/04/08 10:59:14
+MCU Version:                   002.015
+PRI Part Number (PN):          9908663
+PRI Revision:                  001.002
+Carrier PRI Name:              GENERIC
+Carrier PRI Revision:          002.095_000
+SKU:                           1104192
+```
 EE PAYG SIM - note network RAT is LTE - we suspect different behaviour when RAT is 2G or 3G. RAT alternatives will be the subject of other tests  
 
 

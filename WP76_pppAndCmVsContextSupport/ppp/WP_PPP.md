@@ -59,7 +59,7 @@ AT+CGPADDR
 
 [Raw Qualcomm debug data](./testWP76_pppUC2.qmdl)
 
-[Sierra DM log decode](./.png)
+![Sierra DM log decode](./qualcommLogScreenGrab_pppConnect.png)
 
 ## Capture of pppd connection
 ```

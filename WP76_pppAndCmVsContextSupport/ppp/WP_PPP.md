@@ -37,6 +37,17 @@ sudo ./dmcapture.sh -a arm -d /dev/ttyUSB0 -l  -f filters/MC7xxx_GSM_GPRS_EDGE_W
 sudo pppd  /dev/ttyAMA0 115200  record WP76_pppd_ctx2.txt call pppWP76xx
 ```
 
+Note that pppWP76xx calls ATDT*99***2#
+
+From *3GPP TS 27.007 V17.4.0 (2021-12)*
+```
+D*<GPRS_SC>[*[<called_address>][*[<L2P>][*[<cid>[,<cid>[,...]]]]]]#
+```
+<GPRS_SC> = 99  
+
+D*<GPRS_SC>**<L2P>*<cid>#  
+
+
 ## After connection via USB2 (not used for by pppd )
 
 ```

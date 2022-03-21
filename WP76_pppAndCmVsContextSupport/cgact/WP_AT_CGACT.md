@@ -29,7 +29,7 @@ Log messages: /dev/ttyUSB0 -> testWP76_AT_CGACT.qmdl
 
 ## Test command sequence - via USB AT command port - SHELL 2
 
-Try to activate context 3 and check the result  
+Try to activate context 2 and check the result  
 ```
 sudo minicom -D /dev/ttyUSB2
 CTRL A n CTRL A n

@@ -11,7 +11,7 @@ In this case
 * Modem is RC7620 /EM7455
 * qmi drivers are installed on the Host
 * From MBPL_SDK_R23_ENG4-lite\SampleApps\lite-qmi-connection-manager the prebuilt binary application is in use *lite-qmi-connection-managerrpi*
-* Modem must usb composition must include RMNET
+* Modem USB composition must include RMNET
 
 For example (EM7455)
 ```

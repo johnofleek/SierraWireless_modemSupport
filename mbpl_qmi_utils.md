@@ -8,10 +8,10 @@ Sierra have supplied a set of tools / demo apps as source and prebuilt binary
 In this case
 
 * Host is Raspberry Pi 4
-* Modem is RC7620
-* Sierra qmi drivers have been built and installed on the Host
+* Modem is RC7620 /EM7455
+* qmi drivers are installed on the Host
 * From MBPL_SDK_R23_ENG4-lite\SampleApps\lite-qmi-connection-manager the prebuilt binary application is in use *lite-qmi-connection-managerrpi*
-* modem must usb composition must include RMNET
+* Modem must usb composition must include RMNET
 
 For example (EM7455)
 ```

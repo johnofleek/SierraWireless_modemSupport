@@ -71,3 +71,11 @@ ID PDPType IPAddress           PrimaryDNS          SecondaryDNS        Auth Prof
 5  0       0.0.0.0             0.0.0.0             0.0.0.0             1    ee                  everywhere          eesecure
 ```
 
+```
+Option : 6
+
+Please enter a profile id (1-42) (up to 2 Characters), or press <Enter> to exit: 1
+
+ID PDPType IPAddress           PrimaryDNS          SecondaryDNS        Auth ProfileName         APNName             UserName
+1  3       0.0.0.0             0.0.0.0             0.0.0.0             1                        everywhere          eesecure
+```

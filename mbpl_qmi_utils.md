@@ -18,6 +18,8 @@ For example (EM7455)
 at!usbcomp=1,1,0000010D
 OK
 
+REBOOT
+
 at!usbcomp?
 Config Index: 1
 Config Type:  1 (Generic)

@@ -3,7 +3,7 @@
 Sierra have supplied a set of tools / demo apps as source and prebuilt binary
 
 
-## lite-qmi-connection-manager
+# lite-qmi-connection-manager
 
 In this case
 
@@ -11,7 +11,20 @@ In this case
 * Modem is RC7620
 * Sierra qmi drivers have been built and installed on the Host
 * From MBPL_SDK_R23_ENG4-lite\SampleApps\lite-qmi-connection-manager the prebuilt binary application is in use *lite-qmi-connection-managerrpi*
+* modem must usb composition must include RMNET
 
+For example (EM7455)
+```
+at!usbcomp=1,1,0000010D
+OK
+
+at!usbcomp?
+Config Index: 1
+Config Type:  1 (Generic)
+Interface bitmask: 0000010D (diag,nmea,modem,rmnet0)
+```
+
+## Testing
 ```
 pi@raspberrypi:~/MBPL $ ls
 lite-cm-daemon-readme.txt  lite-cm-daemonrpi  lite-qmi-connection-managerrpi
